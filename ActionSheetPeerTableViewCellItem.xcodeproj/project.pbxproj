@@ -10,6 +10,13 @@
 		AC0E75B22406CBFF0026D6FA /* ActionSheetPeerTableViewCellItem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0E75A82406CBFF0026D6FA /* ActionSheetPeerTableViewCellItem.framework */; };
 		AC0E75B72406CBFF0026D6FA /* ActionSheetPeerTableViewCellItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0E75B62406CBFF0026D6FA /* ActionSheetPeerTableViewCellItemTests.swift */; };
 		AC0E75B92406CBFF0026D6FA /* ActionSheetPeerTableViewCellItem.h in Headers */ = {isa = PBXBuildFile; fileRef = AC0E75AB2406CBFF0026D6FA /* ActionSheetPeerTableViewCellItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC0E76012406D7460026D6FA /* ActionSheetPeerTableViewCellItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0E76002406D7460026D6FA /* ActionSheetPeerTableViewCellItem.swift */; };
+		AC0E763D2406D8920026D6FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0E763C2406D8920026D6FA /* AppDelegate.swift */; };
+		AC0E763F2406D8920026D6FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0E763E2406D8920026D6FA /* SceneDelegate.swift */; };
+		AC0E76412406D8920026D6FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0E76402406D8920026D6FA /* ContentView.swift */; };
+		AC0E76432406D8920026D6FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC0E76422406D8920026D6FA /* Assets.xcassets */; };
+		AC0E76462406D8920026D6FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC0E76452406D8920026D6FA /* Preview Assets.xcassets */; };
+		AC0E76492406D8920026D6FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC0E76472406D8920026D6FA /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +36,15 @@
 		AC0E75B12406CBFF0026D6FA /* ActionSheetPeerTableViewCellItemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ActionSheetPeerTableViewCellItemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC0E75B62406CBFF0026D6FA /* ActionSheetPeerTableViewCellItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetPeerTableViewCellItemTests.swift; sourceTree = "<group>"; };
 		AC0E75B82406CBFF0026D6FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC0E76002406D7460026D6FA /* ActionSheetPeerTableViewCellItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetPeerTableViewCellItem.swift; sourceTree = "<group>"; };
+		AC0E763A2406D8920026D6FA /* ActionSheetPeerTableViewCellItemExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActionSheetPeerTableViewCellItemExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC0E763C2406D8920026D6FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC0E763E2406D8920026D6FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AC0E76402406D8920026D6FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AC0E76422406D8920026D6FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC0E76452406D8920026D6FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AC0E76482406D8920026D6FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC0E764A2406D8920026D6FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +63,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AC0E76372406D8920026D6FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,6 +78,7 @@
 			children = (
 				AC0E75AA2406CBFF0026D6FA /* ActionSheetPeerTableViewCellItem */,
 				AC0E75B52406CBFF0026D6FA /* ActionSheetPeerTableViewCellItemTests */,
+				AC0E763B2406D8920026D6FA /* ActionSheetPeerTableViewCellItemExamples */,
 				AC0E75A92406CBFF0026D6FA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +88,7 @@
 			children = (
 				AC0E75A82406CBFF0026D6FA /* ActionSheetPeerTableViewCellItem.framework */,
 				AC0E75B12406CBFF0026D6FA /* ActionSheetPeerTableViewCellItemTests.xctest */,
+				AC0E763A2406D8920026D6FA /* ActionSheetPeerTableViewCellItemExamples.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +98,7 @@
 			children = (
 				AC0E75AB2406CBFF0026D6FA /* ActionSheetPeerTableViewCellItem.h */,
 				AC0E75AC2406CBFF0026D6FA /* Info.plist */,
+				AC0E76002406D7460026D6FA /* ActionSheetPeerTableViewCellItem.swift */,
 			);
 			path = ActionSheetPeerTableViewCellItem;
 			sourceTree = "<group>";
@@ -84,6 +110,28 @@
 				AC0E75B82406CBFF0026D6FA /* Info.plist */,
 			);
 			path = ActionSheetPeerTableViewCellItemTests;
+			sourceTree = "<group>";
+		};
+		AC0E763B2406D8920026D6FA /* ActionSheetPeerTableViewCellItemExamples */ = {
+			isa = PBXGroup;
+			children = (
+				AC0E763C2406D8920026D6FA /* AppDelegate.swift */,
+				AC0E763E2406D8920026D6FA /* SceneDelegate.swift */,
+				AC0E76402406D8920026D6FA /* ContentView.swift */,
+				AC0E76422406D8920026D6FA /* Assets.xcassets */,
+				AC0E76472406D8920026D6FA /* LaunchScreen.storyboard */,
+				AC0E764A2406D8920026D6FA /* Info.plist */,
+				AC0E76442406D8920026D6FA /* Preview Content */,
+			);
+			path = ActionSheetPeerTableViewCellItemExamples;
+			sourceTree = "<group>";
+		};
+		AC0E76442406D8920026D6FA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AC0E76452406D8920026D6FA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +184,23 @@
 			productReference = AC0E75B12406CBFF0026D6FA /* ActionSheetPeerTableViewCellItemTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		AC0E76392406D8920026D6FA /* ActionSheetPeerTableViewCellItemExamples */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC0E764B2406D8920026D6FA /* Build configuration list for PBXNativeTarget "ActionSheetPeerTableViewCellItemExamples" */;
+			buildPhases = (
+				AC0E76362406D8920026D6FA /* Sources */,
+				AC0E76372406D8920026D6FA /* Frameworks */,
+				AC0E76382406D8920026D6FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ActionSheetPeerTableViewCellItemExamples;
+			productName = ActionSheetPeerTableViewCellItemExamples;
+			productReference = AC0E763A2406D8920026D6FA /* ActionSheetPeerTableViewCellItemExamples.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -148,8 +213,12 @@
 				TargetAttributes = {
 					AC0E75A72406CBFF0026D6FA = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 					AC0E75B02406CBFF0026D6FA = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					AC0E76392406D8920026D6FA = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
 				};
@@ -169,6 +238,7 @@
 			targets = (
 				AC0E75A72406CBFF0026D6FA /* ActionSheetPeerTableViewCellItem */,
 				AC0E75B02406CBFF0026D6FA /* ActionSheetPeerTableViewCellItemTests */,
+				AC0E76392406D8920026D6FA /* ActionSheetPeerTableViewCellItemExamples */,
 			);
 		};
 /* End PBXProject section */
@@ -188,6 +258,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AC0E76382406D8920026D6FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0E76492406D8920026D6FA /* LaunchScreen.storyboard in Resources */,
+				AC0E76462406D8920026D6FA /* Preview Assets.xcassets in Resources */,
+				AC0E76432406D8920026D6FA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -195,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC0E76012406D7460026D6FA /* ActionSheetPeerTableViewCellItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +284,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC0E75B72406CBFF0026D6FA /* ActionSheetPeerTableViewCellItemTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0E76362406D8920026D6FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0E763D2406D8920026D6FA /* AppDelegate.swift in Sources */,
+				AC0E763F2406D8920026D6FA /* SceneDelegate.swift in Sources */,
+				AC0E76412406D8920026D6FA /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +306,17 @@
 			targetProxy = AC0E75B32406CBFF0026D6FA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AC0E76472406D8920026D6FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC0E76482406D8920026D6FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AC0E75BA2406CBFF0026D6FA /* Debug */ = {
@@ -340,6 +442,7 @@
 		AC0E75BD2406CBFF0026D6FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = EPMM58X8CP;
@@ -356,6 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = apponim.ActionSheetPeerTableViewCellItem;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +468,7 @@
 		AC0E75BE2406CBFF0026D6FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = EPMM58X8CP;
@@ -388,6 +493,7 @@
 		AC0E75C02406CBFF0026D6FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EPMM58X8CP;
 				INFOPLIST_FILE = ActionSheetPeerTableViewCellItemTests/Info.plist;
@@ -406,6 +512,7 @@
 		AC0E75C12406CBFF0026D6FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EPMM58X8CP;
 				INFOPLIST_FILE = ActionSheetPeerTableViewCellItemTests/Info.plist;
@@ -415,6 +522,48 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = apponim.ActionSheetPeerTableViewCellItemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AC0E764C2406D8920026D6FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ActionSheetPeerTableViewCellItemExamples/Preview Content\"";
+				DEVELOPMENT_TEAM = EPMM58X8CP;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ActionSheetPeerTableViewCellItemExamples/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = apponim.ActionSheetPeerTableViewCellItemExamples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC0E764D2406D8920026D6FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ActionSheetPeerTableViewCellItemExamples/Preview Content\"";
+				DEVELOPMENT_TEAM = EPMM58X8CP;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ActionSheetPeerTableViewCellItemExamples/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = apponim.ActionSheetPeerTableViewCellItemExamples;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -447,6 +596,15 @@
 			buildConfigurations = (
 				AC0E75C02406CBFF0026D6FA /* Debug */,
 				AC0E75C12406CBFF0026D6FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC0E764B2406D8920026D6FA /* Build configuration list for PBXNativeTarget "ActionSheetPeerTableViewCellItemExamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0E764C2406D8920026D6FA /* Debug */,
+				AC0E764D2406D8920026D6FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
