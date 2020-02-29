@@ -1,0 +1,6 @@
+framework module Pods_ActionSheetPeerTableViewCellItemTests {
+  umbrella header "Pods-ActionSheetPeerTableViewCellItemTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

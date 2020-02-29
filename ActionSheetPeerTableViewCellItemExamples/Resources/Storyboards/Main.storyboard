@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F0H-si-rhD">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Discussion-->
+        <scene sceneID="OaD-bH-WGu">
+            <objects>
+                <tableViewController storyboardIdentifier="MessagesViewController" title="Task Discussion" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6a-gj-pwb" userLabel="Discussion" customClass="MessagesViewController" customModule="ActionSheetPeerTableViewCellItemExamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" keyboardDismissMode="interactive" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="z5n-O9-ywb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="MessageTableViewCell" rowHeight="80" id="sva-g6-UMS" customClass="MessageTableViewCell" customModule="ActionSheetPeerTableViewCellItemExamples" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sva-g6-UMS" id="5cZ-0J-x8H">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qaq-uv-TIC">
+                                            <rect key="frame" x="15" y="5" width="33" height="33"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="33" id="TmN-Yg-rvN"/>
+                                                <constraint firstAttribute="width" constant="33" id="zpN-4S-9dM"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zi2-X6-rgi">
+                                            <rect key="frame" x="63" y="5" width="53" height="44.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DK4-mP-Xv3" customClass="TitleLabel" customModule="ActionSheetPeerTableViewCellItemExamples" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="5" width="37" height="17"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJb-O0-QVJ" customClass="SubtitleLabel" customModule="ActionSheetPeerTableViewCellItemExamples" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="22" width="37" height="17.5"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                    <color key="textColor" name="Subtitle"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" name="MessageTableViewCellContainer"/>
+                                            <constraints>
+                                                <constraint firstItem="DK4-mP-Xv3" firstAttribute="top" secondItem="zi2-X6-rgi" secondAttribute="top" constant="5" id="2rS-XA-9Zs"/>
+                                                <constraint firstAttribute="trailing" secondItem="OJb-O0-QVJ" secondAttribute="trailing" constant="8" id="7oS-6b-kHQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="OJb-O0-QVJ" secondAttribute="bottom" constant="5" id="FSq-7H-7cf"/>
+                                                <constraint firstItem="OJb-O0-QVJ" firstAttribute="top" secondItem="DK4-mP-Xv3" secondAttribute="bottom" id="SCE-9h-GIo"/>
+                                                <constraint firstAttribute="trailing" secondItem="DK4-mP-Xv3" secondAttribute="trailing" constant="8" id="Tcp-dN-103"/>
+                                                <constraint firstItem="OJb-O0-QVJ" firstAttribute="leading" secondItem="DK4-mP-Xv3" secondAttribute="leading" id="gOe-0I-ZpQ"/>
+                                                <constraint firstItem="DK4-mP-Xv3" firstAttribute="leading" secondItem="zi2-X6-rgi" secondAttribute="leading" constant="8" id="vxy-zp-Ffh"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="11"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="aabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGz-Qy-7Qi" customClass="LightSubtitleLabel" customModule="ActionSheetPeerTableViewCellItemExamples" customModuleProvider="target">
+                                            <rect key="frame" x="71" y="51.5" width="29.5" height="14"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                            <color key="textColor" name="Light"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstItem="zi2-X6-rgi" firstAttribute="top" secondItem="5cZ-0J-x8H" secondAttribute="top" constant="5" id="EUg-81-OSz"/>
+                                        <constraint firstItem="qaq-uv-TIC" firstAttribute="top" secondItem="5cZ-0J-x8H" secondAttribute="top" constant="5" id="NCd-Tx-Yvv"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="jGz-Qy-7Qi" secondAttribute="bottom" constant="5" id="NDV-VE-DdV"/>
+                                        <constraint firstItem="qaq-uv-TIC" firstAttribute="leading" secondItem="5cZ-0J-x8H" secondAttribute="leading" constant="15" id="ZPl-Vv-UkJ"/>
+                                        <constraint firstItem="zi2-X6-rgi" firstAttribute="leading" secondItem="qaq-uv-TIC" secondAttribute="trailing" constant="15" id="dzk-BE-ObG"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zi2-X6-rgi" secondAttribute="trailing" constant="15" id="kej-hD-VMi"/>
+                                        <constraint firstItem="jGz-Qy-7Qi" firstAttribute="leading" secondItem="OJb-O0-QVJ" secondAttribute="leading" id="n6u-ag-9sR"/>
+                                        <constraint firstItem="jGz-Qy-7Qi" firstAttribute="top" secondItem="zi2-X6-rgi" secondAttribute="bottom" constant="2" id="zUI-WZ-ddr"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="commentLabel" destination="OJb-O0-QVJ" id="q0B-2P-hvo"/>
+                                    <outlet property="dateLabel" destination="jGz-Qy-7Qi" id="3XD-qO-vA3"/>
+                                    <outlet property="messageContainerView" destination="zi2-X6-rgi" id="29J-IM-NEW"/>
+                                    <outlet property="userFullNameLabel" destination="DK4-mP-Xv3" id="keb-ds-djA"/>
+                                    <outlet property="userProfileImageView" destination="qaq-uv-TIC" id="JmD-43-kmu"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Y6a-gj-pwb" id="hlu-WL-oNF"/>
+                            <outlet property="delegate" destination="Y6a-gj-pwb" id="Jml-OA-jl9"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Messages" id="zva-eq-FL3">
+                        <barButtonItem key="rightBarButtonItem" image="calendar" catalog="system" id="xjP-zm-vAk">
+                            <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="presentModally:" destination="Y6a-gj-pwb" id="G2c-9S-Mwj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6JV-Ii-CJt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6860" y="403.44827586206901"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EKV-Hf-scE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="F0H-si-rhD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="I51-U0-Vr1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6a-gj-pwb" kind="relationship" relationship="rootViewController" id="hqH-ZQ-geH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w75-Bq-oqb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5920.8000000000002" y="403.44827586206901"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="calendar" catalog="system" width="64" height="52"/>
+        <namedColor name="Light">
+            <color white="0.72600001096725464" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+        <namedColor name="MessageTableViewCellContainer">
+            <color red="0.9570000171661377" green="0.96899998188018799" blue="0.97600001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Subtitle">
+            <color red="0.40799999237060547" green="0.40799999237060547" blue="0.40799999237060547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

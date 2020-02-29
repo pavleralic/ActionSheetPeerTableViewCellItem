@@ -1,0 +1,6 @@
+framework module Pods_ActionSheetPeerTableViewCellItemExamples {
+  umbrella header "Pods-ActionSheetPeerTableViewCellItemExamples-umbrella.h"
+
+  export *
+  module * { export * }
+}
