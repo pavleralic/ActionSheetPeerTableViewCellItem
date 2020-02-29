@@ -100,7 +100,13 @@ class ActionSheetViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        minTopEdgeRectInsent = tableView.convert(tableView.bounds, to: view).minY + tableView.safeAreaInsets.top
+        minTopEdgeRectInsent = tableView.convert(tableView.bounds, to: view).minY
+        
+        if #available(iOS 11.0, *) {
+            minTopEdgeRectInsent += tableView.safeAreaInsets.top
+        } else {
+            minTopEdgeRectInsent += topLayoutGuide.length
+        }
         
         setupUI()
         
