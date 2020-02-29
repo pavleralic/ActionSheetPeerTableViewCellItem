@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "ActionSheetPeerTableViewCellItem"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "A CocoaPods library written in Swift"
 
   spec.description  = <<-DESC
@@ -12,7 +12,7 @@ This CocoaPods library helps you perform calculation.
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "pavleralic" => "pavle.ralic@gmail.com" }
 
-  spec.ios.deployment_target = "11.0"
+  spec.ios.deployment_target = "10.0"
   spec.swift_version = "5.0"
 
   spec.source        = { :git => "https://github.com/pavleralic/ActionSheetPeerTableViewCellItem.git", :tag => "#{spec.version}" }
