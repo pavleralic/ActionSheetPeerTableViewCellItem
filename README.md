@@ -71,7 +71,16 @@ public protocol ActionSheetTableViewCellDelegate: NSObjectProtocol {
 
 ## Usage
 
-* ActionCellDelegate
+* ActionSheetTableViewCell
+
+```swift
+class YourCustomTableViewCell: ActionSheetTableViewCell {
+
+    override var longPressGestureAndOnActionSheetFocusedView: UIView { return someContainerSubviewOfYourCustomTableViewCell }
+}
+```
+
+* ActionSheetTableViewCellDelegate
 
 ```swift
 extension ViewController: ActionSheetTableViewCellDelegate {
@@ -82,7 +91,7 @@ extension ViewController: ActionSheetTableViewCellDelegate {
 }
 ```
 
-* Wrap your UITableViewCell with ActionSheetTableViewCell
+* Set to your YourCustomTableViewCell ActionSheetTableViewCellDelegate
 
 ```swift
 func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -99,13 +108,4 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
 }
 ```
 
-! CAUTION : To make UITableViewCell work properly, you should override the longPressGestureAndOnActionSheetFocusedView variable:
 
-```swift
-
-class YourCustomTableViewCell: ActionSheetTableViewCell {
-    
-    override var longPressGestureAndOnActionSheetFocusedView: UIView { return someContainerSubviewOfYourCustomTableViewCell }
-}
-
-```
