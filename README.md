@@ -5,7 +5,7 @@
 [![license MIT](https://img.shields.io/cocoapods/l/SwipeCellKit.svg)][mitLink] 
 [![Platform](https://img.shields.io/cocoapods/p/SwipeCellKit.svg)][docsLink] 
 
-<p align="center"><img src="https://giphy.com/gifs/KHcO2ViUYDrADePYZk" /></p>
+<p align="center"><img src="https://giphy.com/gifs/KHcO2ViUYDrADePYZk"/></p>
 
 ## About
 
