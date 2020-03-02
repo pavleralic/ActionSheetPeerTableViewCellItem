@@ -14,7 +14,7 @@ A `UITableViewCell` with support for:
 * Action buttons with: *text only, text + image*
 * Haptic Feedback
 * Completely customizable action sheet
-* Completely expansion animations
+* Completely customizable expansion and termination animations
 * Accessibility
 
 ## Requirements
