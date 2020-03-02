@@ -359,9 +359,9 @@
 			children = (
 				ACC1CFD82407DFBB00ABE663 /* UIColor.swift */,
 				ACC1CFDD2407E12D00ABE663 /* UIFont.swift */,
+				ACA0E66524094EF1002A6494 /* UIImage.swift */,
 				ACC1CFE72407E9C800ABE663 /* UITableView.swift */,
 				ACC1CFE92407F29600ABE663 /* UIViewController.swift */,
-				ACA0E66524094EF1002A6494 /* UIImage.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -385,9 +385,9 @@
 		ACC1CFF32407F95000ABE663 /* String */ = {
 			isa = PBXGroup;
 			children = (
-				ACC1CFED2407F5E700ABE663 /* String+Localized.swift */,
-				ACC1CFEF2407F92400ABE663 /* String+Date.swift */,
 				ACA0E6692409700C002A6494 /* String+AlertSheetItemActions.swift */,
+				ACC1CFEF2407F92400ABE663 /* String+Date.swift */,
+				ACC1CFED2407F5E700ABE663 /* String+Localized.swift */,
 				ACA0E66B240970A1002A6494 /* String+Logs.swift */,
 			);
 			path = String;
